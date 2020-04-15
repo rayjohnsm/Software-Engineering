@@ -71,6 +71,7 @@
             this.ClientSize = new System.Drawing.Size(561, 320);
             this.Controls.Add(this.chart1);
             this.Name = "UserCharts";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UserCharts";
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);

@@ -268,7 +268,7 @@
             this.ClientSize = new System.Drawing.Size(312, 318);
             this.Controls.Add(this.panelControl1);
             this.Name = "newUser";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add User Form";
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);

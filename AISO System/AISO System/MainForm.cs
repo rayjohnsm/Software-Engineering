@@ -129,5 +129,11 @@ namespace AISO_System
             New_Transaction newtransact = new New_Transaction();
             newtransact.ShowDialog();
         }
+
+        private void barButtonItem13_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            About about = new About();
+            about.ShowDialog();
+        }
     }
 }
