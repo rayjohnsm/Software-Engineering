@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5BE55540-D913-40ED-8F6F-F27C31ABB281}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AISO_System</RootNamespace>
+    <AssemblyName>AISO System</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>AISO_System.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Xpo.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Persistent.Base.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v14.2.UI, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v14.2.Wizard, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="MySql.Data, Version=6.5.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Resources\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Lock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lock.Designer.cs">
+      <DependentUpon>Lock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mysqlcon.cs" />
+    <Compile Include="New_Transaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New_Transaction.Designer.cs">
+      <DependentUpon>New_Transaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewProduct.Designer.cs">
+      <DependentUpon>NewProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newUser.Designer.cs">
+      <DependentUpon>newUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_Management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_Management.Designer.cs">
+      <DependentUpon>User_Management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCharts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserCharts.Designer.cs">
+      <DependentUpon>UserCharts.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Lock.resx">
+      <DependentUpon>Lock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New_Transaction.resx">
+      <DependentUpon>New_Transaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewProduct.resx">
+      <DependentUpon>NewProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newUser.resx">
+      <DependentUpon>newUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_Management.resx">
+      <DependentUpon>User_Management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCharts.resx">
+      <DependentUpon>UserCharts.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bIsu_logo - Copy.ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_set\Log Out\Log Out_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_set\Calendar\Calendar_256x256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addfile_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addfile_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newtask_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newtask_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newtask_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bringtofrontoftext_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bringtofrontoftext_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bringtofrontoftext_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kpi_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kpi_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kpi_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chartsshowlegend_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chartsshowlegend_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chartsshowlegend_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictureshapefillcolor_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictureshapefillcolor_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictureshapefillcolor_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palette_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palette_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palette_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palette_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palette_32x322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palette_16x162.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palette_32x323.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palette_16x163.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palette_32x324.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictureshapefillcolor_32x322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictureshapefillcolor_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palette_32x325.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palette_16x164.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palette_32x326.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usergroup_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usergroup_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usergroup_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\findcustomers_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\findcustomers_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fullstackedbar_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fullstackedbar_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\index_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\index_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CEA_LOGO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tnt logo 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barcodescanning.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\publicfix_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\publicfix_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_set\Add\Add_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_set\Cancel\Cancel_256x256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_set\Cancel\Cancel_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_set\Edit\Edit_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_set\Edit\Edit_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_set\Undo\Undo_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_set\Delete\Delete_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_set\Cancel\Cancel_32x32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

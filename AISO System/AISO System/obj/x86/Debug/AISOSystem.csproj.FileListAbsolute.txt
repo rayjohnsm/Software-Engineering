@@ -1,0 +1,17 @@
+C:\Users\RayJohn\Desktop\Software Eng\AISO System\AISO System\obj\x86\Debug\AISO_System.Lock.resources
+C:\Users\RayJohn\Desktop\Software Eng\AISO System\AISO System\obj\x86\Debug\AISO_System.Properties.Resources.resources
+C:\Users\RayJohn\Desktop\Software Eng\AISO System\AISO System\obj\x86\Debug\AISO_System.MainForm.resources
+C:\Users\RayJohn\Desktop\Software Eng\AISO System\AISO System\obj\x86\Debug\AISOSystem.csproj.GenerateResource.Cache
+C:\Users\RayJohn\Desktop\Software Eng\AISO System\AISO System\obj\x86\Debug\AISO System.exe.licenses
+C:\Users\RayJohn\Desktop\Software Eng\AISO System\AISO System\obj\x86\Debug\AISO System.exe
+C:\Users\RayJohn\Desktop\Software Eng\AISO System\AISO System\bin\Debug\AISO System.exe
+C:\Users\RayJohn\Desktop\Software Eng\AISO System\AISO System\bin\Debug\AISO System.pdb
+C:\Users\RayJohn\Desktop\Software Eng\AISO System\AISO System\bin\Debug\MySql.Data.dll
+C:\Users\RayJohn\Desktop\Software Eng\AISO System\AISO System\obj\x86\Debug\AISO System.pdb
+C:\Users\RayJohn\Desktop\Software Eng\AISO System\AISO System\obj\x86\Debug\AISOSystem.csprojResolveAssemblyReference.cache
+C:\Users\RayJohn\Desktop\Software Eng\AISO System\AISO System\obj\x86\Debug\AISO_System.newUser.resources
+C:\Users\RayJohn\Desktop\Software Eng\AISO System\AISO System\obj\x86\Debug\AISO_System.User_Management.resources
+C:\Users\RayJohn\Desktop\Software Eng\AISO System\AISO System\bin\Debug\AISO System.exe.config
+C:\Users\RayJohn\Desktop\Software Eng\AISO System\AISO System\obj\x86\Debug\AISO_System.UserCharts.resources
+C:\Users\RayJohn\Desktop\Software Eng\AISO System\AISO System\obj\x86\Debug\AISO_System.New_Transaction.resources
+C:\Users\RayJohn\Desktop\Software Eng\AISO System\AISO System\obj\x86\Debug\AISO_System.NewProduct.resources

@@ -1,0 +1,10 @@
+C:\Users\RayJohn\Desktop\Software Eng\AISO System\AISO System\obj\x86\Debug\AISO System.csprojResolveAssemblyReference.cache
+C:\Users\RayJohn\Desktop\Software Eng\AISO System\AISO System\obj\x86\Debug\AISO_System.Properties.Resources.resources
+C:\Users\RayJohn\Desktop\Software Eng\AISO System\AISO System\obj\x86\Debug\AISO_System.MainForm.resources
+C:\Users\RayJohn\Desktop\Software Eng\AISO System\AISO System\obj\x86\Debug\AISO System.csproj.GenerateResource.Cache
+C:\Users\RayJohn\Desktop\Software Eng\AISO System\AISO System\obj\x86\Debug\AISO System.exe.licenses
+C:\Users\RayJohn\Desktop\Software Eng\AISO System\AISO System\bin\Debug\AISO System.exe
+C:\Users\RayJohn\Desktop\Software Eng\AISO System\AISO System\bin\Debug\AISO System.pdb
+C:\Users\RayJohn\Desktop\Software Eng\AISO System\AISO System\obj\x86\Debug\AISO System.exe
+C:\Users\RayJohn\Desktop\Software Eng\AISO System\AISO System\obj\x86\Debug\AISO System.pdb
+C:\Users\RayJohn\Desktop\Software Eng\AISO System\AISO System\obj\x86\Debug\AISO_System.Lock.resources
