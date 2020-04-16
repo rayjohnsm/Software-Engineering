@@ -33,3 +33,6 @@ C:\Users\RayJohn\Desktop\New folder\Software-Engineering\AISO System\AISO System
 C:\Users\RayJohn\Desktop\New folder\Software-Engineering\AISO System\AISO System\obj\x86\Debug\AISO_System.UserCharts.resources
 C:\Users\RayJohn\Desktop\New folder\Software-Engineering\AISO System\AISO System\obj\x86\Debug\AISOSystem.csproj.GenerateResource.Cache
 C:\Users\RayJohn\Desktop\New folder\Software-Engineering\AISO System\AISO System\obj\x86\Debug\AISO System.exe.licenses
+C:\Users\Kitt Cymonne\Documents\Software-Engineering\AISO System\AISO System\bin\Debug\AISO System.exe.config
+C:\Users\Kitt Cymonne\Documents\Software-Engineering\AISO System\AISO System\obj\x86\Debug\AISO System.exe
+C:\Users\Kitt Cymonne\Documents\Software-Engineering\AISO System\AISO System\obj\x86\Debug\AISO System.pdb
