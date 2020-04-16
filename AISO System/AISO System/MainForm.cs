@@ -18,13 +18,12 @@ namespace AISO_System
 
         public MainForm(MySqlDataReader data)
         {
-             
-                userdata = data;
                 InitializeComponent();
+                userdata = data;
                 StartTimer();
                 FormInitialization();
+                dao.InsertLogs(userdata["user_id"].ToString());
         }
-
         System.Windows.Forms.Timer timer1 = null;
         private void FormInitialization()
         {
@@ -94,6 +93,7 @@ namespace AISO_System
 
         private void barButtonItem3_ItemClick(object sender, ItemClickEventArgs e)
         {
+            dao.InsertLogOut(userdata["user_id"].ToString());
             this.Hide();
             Lock logout = new Lock();
             logout.ShowDialog();
@@ -134,6 +134,12 @@ namespace AISO_System
         {
             About about = new About();
             about.ShowDialog();
+        }
+
+        private void barButtonItem10_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Users_Logs logs = new Users_Logs();
+            logs.ShowDialog();
         }
     }
 }

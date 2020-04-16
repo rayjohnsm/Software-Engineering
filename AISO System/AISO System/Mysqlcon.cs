@@ -46,6 +46,44 @@ namespace AISO_System
                 }
             }
         }
+        public void InsertLogs(string id)
+        {
+            using (getConnection())
+            {
+                try
+                {
+                    MySqlConnection con = getConnection();
+                    String querry = "INSERT INTO `aiso`.`aiso_users_logs` (`user_id`, `user_log_inDate`) VALUES ('"+id+"', now())";
+                    MySqlCommand cmd = new MySqlCommand(querry, con);
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                    getConnection().Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+        public void InsertLogOut(string id)
+        {
+            using (getConnection())
+            {
+                try
+                {
+                    MySqlConnection con = getConnection();
+                    String querry = "UPDATE `aiso`.`aiso_users_logs` SET `user_log_outDate` = 'now()' WHERE `aiso_users_logs`.`user_log_id` ="+id+";";
+                    MySqlCommand cmd = new MySqlCommand(querry, con);
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                    getConnection().Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
         public void UpdateMyStyle(string Style, string id)
         {
             using (getConnection())

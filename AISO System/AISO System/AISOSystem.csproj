@@ -110,6 +110,12 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Users_Logs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users_Logs.Designer.cs">
+      <DependentUpon>Users_Logs.cs</DependentUpon>
+    </Compile>
     <Compile Include="User_Management.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +156,9 @@
     </Compile>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users_Logs.resx">
+      <DependentUpon>Users_Logs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User_Management.resx">
       <DependentUpon>User_Management.cs</DependentUpon>

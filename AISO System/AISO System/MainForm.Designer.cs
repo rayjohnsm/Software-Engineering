@@ -239,6 +239,7 @@
             this.barButtonItem10.Id = 23;
             this.barButtonItem10.LargeGlyph = global::AISO_System.Properties.Resources.findcustomers_32x32;
             this.barButtonItem10.Name = "barButtonItem10";
+            this.barButtonItem10.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem10_ItemClick);
             // 
             // barButtonItem11
             // 
